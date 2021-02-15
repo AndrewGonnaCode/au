@@ -1,0 +1,60 @@
+.input {
+  padding-top: 30px;
+}
+.input > label {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr;
+}
+.input__name {
+  font-size: 21px;
+  color: #000;
+}
+.input__text {
+  color: #999999;
+  font-size: 12px;
+  max-width: 350px;
+}
+
+.input__input > input {
+  padding: 5px;
+  margin-right: 20px;
+  width: 93%;
+  margin-bottom: 5px;
+  outline: none;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox > input {
+  margin-right: 5px;
+  margin-left: 50px;
+}
+.checkbox > span {
+  font-size: 16px;
+  width: 360px;
+}
+.input__error {
+  color: red;
+  font-size: 12px;
+}
+.error > input {
+  border: 1px solid red;
+}
+
+@media (max-width: 760px) {
+  .input > label {
+    display: flex;
+    flex-direction: column;
+  }
+  .input__input > input {
+    margin-bottom: 10px;
+  }
+  .input__name {
+    margin-bottom: 10px;
+  }
+  .input__error {
+    margin-bottom: 5px;
+  }
+
+}
